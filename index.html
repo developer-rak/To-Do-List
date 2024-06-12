@@ -1,44 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>To Do List</title>
   <link rel="stylesheet" href="style.css">
+  <title>ToDo List CognoRise</title>
 </head>
-
 <body>
-  <!-- HEADER -->
-  <header>
-    <h1>Task List 2023</h1>
-    <form id="new-task-form">
-      <input type="text" name="new-task-input" id="new-task-input" placeholder="What do you have planned?">
-      <input type="submit" id="new-task-submit" value="Add task">
-    </form>
-  </header>
-
-  <main>
-    <section class="task-list">
-      <h2>Tasks</h2>
-
-      <div id="tasks">
-
-        <!-- <div class="task">
-          <div class="content">
-            <input type="text" class="text" value="My Shiny task" readonly>
-          </div>
-          <div class="actions">
-            <button class="edit">Edit</button>
-            <button class="delete">Delete</button>
-          </div>
-        </div> -->
-
-      </div>
-    </section>
-  </main>
-  <!-- -----SCRIPT----- -->
-  <script src="main.js"></script>
+  <div class="container">
+    <h1>To-Do</h1>
+    <div class="input-container">
+      <input type="text" id="taskInput" placeholder="Add a new Task" />
+      <button onclick="addTask()">Add</button>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+  
+  <script src="script.js"></script>
 </body>
-
 </html>
